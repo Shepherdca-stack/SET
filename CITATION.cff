@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use or discuss this work, please cite it as below."
+title: "SET v1.8: a machine-checked mathematical framework with two registered, falsifiable predictions"
+authors:
+  - family-names: "Shepherd"
+    given-names: "Corey"
+    affiliation: "Independent researcher, Olive Hill, Kentucky, USA"
+version: "1.8"
+date-released: "2026-08-11"
+license: MIT
+abstract: >-
+  A body of mathematical work built from a single postulated object, the
+  horn torus, whose radial metric is the Fisher information metric of a
+  Bernoulli variable, plus one experimental calibrant and an explicitly
+  listed assumption ledger. The record derives a large set of physical
+  quantities (labeled postdictions), a dark-matter candidate (chain 31,
+  CANDIDATE, resting on the named postulate P-RING and the conditional
+  Q-LAW), and two registered predictions with explicit kill conditions:
+  P6 (dark-matter-to-baryon ratio exactly 2pi - 1, CANDIDATE carrier on
+  proven internal geometry) and P7 (eternal direct-detection null). All
+  claims labeled PROVEN carry machine checks; the verification suite runs
+  94 checks with zero failures at issue. Code MIT, documents CC BY 4.0.
+keywords:
+  - horn torus
+  - Fisher information geometry
+  - information geometry
+  - Dirac operator
+  - spectral geometry
+  - dark matter candidate
+  - falsifiable predictions
+  - pre-registration
+  - reproducible research
+  - machine-checked mathematics

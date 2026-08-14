@@ -1,0 +1,5 @@
+# Pinned to the versions the 94-check suite was verified against
+# (clean run, 94 PASS / 0 FAIL, August 12, 2026, Python 3.12)
+numpy==2.4.4
+scipy==1.17.1
+sympy==1.14.0
