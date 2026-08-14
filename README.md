@@ -1,3 +1,4 @@
+![verify](https://github.com/Shepherdca-stack/SET/actions/workflows/verify.yml/badge.svg)
 # SET v1.8: a machine-checked mathematical framework with two registered, falsifiable predictions
 
 **Author:** Corey Shepherd, independent researcher, Olive Hill, Kentucky
