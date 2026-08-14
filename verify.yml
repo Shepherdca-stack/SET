@@ -1,0 +1,48 @@
+name: verify
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  suite:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install pinned dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run verification suite v5
+        run: |
+          python SET_verification_suite_v5.py | tee suite_output.txt
+
+      # The suite reports through printed PASS/FAIL lines, not its exit
+      # code, so the gate parses the output. Build fails on any FAIL
+      # line, on a PASS count other than 94, or if the completion line
+      # is missing.
+      - name: "Gate: 94 PASS, zero FAIL"
+        run: |
+          FAILS=$(grep -c '^\[FAIL\]' suite_output.txt || true)
+          PASSES=$(grep -c '^\[PASS\]' suite_output.txt || true)
+          echo "PASS lines: $PASSES"
+          echo "FAIL lines: $FAILS"
+          if [ "$FAILS" -ne 0 ]; then
+            echo "::error::Verification suite reported $FAILS failing check(s):"
+            grep '^\[FAIL\]' suite_output.txt
+            exit 1
+          fi
+          if [ "$PASSES" -ne 94 ]; then
+            echo "::error::Expected exactly 94 passing checks, got $PASSES."
+            exit 1
+          fi
+          if ! grep -q '^Suite v5 complete\.$' suite_output.txt; then
+            echo "::error::Suite did not reach its completion line."
+            exit 1
+          fi
+          echo "All 94 checks green."
