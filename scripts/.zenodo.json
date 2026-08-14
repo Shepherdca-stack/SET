@@ -1,0 +1,29 @@
+{
+  "title": "SET v1.8: a machine-checked mathematical framework with two registered, falsifiable predictions",
+  "upload_type": "software",
+  "description": "<p>A body of mathematical work built from a single postulated object, the horn torus, whose radial metric is exactly the Fisher information metric of a Bernoulli variable, plus one experimental calibrant (N = 19,776, from the baryon-to-photon ratio) and an explicitly listed assumption ledger. The record derives a large set of physical quantities, labeled postdictions throughout, and a dark-matter candidate (derivation chain 31, status CANDIDATE, resting on the named two-clause postulate P-RING and, in its quantized sector, the named conditional Q-LAW).</p><p>The deposit's evidential exposure lives in two predictions registered on August 11, 2026, each with an explicit kill condition and no retreat clause. P6: the cosmological dark-matter-to-baryon density ratio converges to exactly 2pi - 1 = 5.2832 with zero adjustable parameters (CANDIDATE carrier on internally proven geometry; killed by a greater-than-3-sigma exclusion). P7: dark matter couples to ordinary matter at the proton's gravitational fine-structure constant and no stronger, so every direct-detection experiment stays empty at every mass in every channel (killed by any confirmed non-gravitational dark-matter signal). The originally cited decisive instrument for P6, CMB-S4, was cancelled by DOE and NSF on July 9, 2025; the successor experiment clock is recorded in the workbook and the pre-registration text.</p><p>Contents: the unified master state document, the master workbook (derivation chains 1-32, equations E1-E117, predictions register, assumption ledger, superseded register), the verification suite (94 machine checks, zero failures at issue), and nine supporting numeric scripts. Every claim labeled PROVEN carries a machine-executed check or a separately audited proof; the suite runs in minutes on commodity hardware with the pinned dependencies. The checks establish internal mathematical correctness only; the registered predictions are the framework's contact with measurement.</p><p>Code is MIT licensed; documents are CC BY 4.0.</p>",
+  "creators": [
+    {
+      "name": "Shepherd, Corey",
+      "affiliation": "Independent researcher, Olive Hill, Kentucky, USA"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "version": "1.8",
+  "publication_date": "2026-08-11",
+  "keywords": [
+    "horn torus",
+    "Fisher information geometry",
+    "information geometry",
+    "spectral geometry",
+    "Dirac operator",
+    "dark matter candidate",
+    "dark matter to baryon ratio",
+    "falsifiable predictions",
+    "pre-registration",
+    "reproducible research",
+    "machine-checked mathematics",
+    "verification suite"
+  ],
+  "notes": "Verification status at issue: 94 machine checks, 0 failures (numpy 2.4.4, scipy 1.17.1, sympy 1.14.0, Python 3.12, verified August 12, 2026). Status labels used throughout the deposit: PROVEN, THEOREM, CONDITIONAL, CANDIDATE, OBSERVED, SUPERSEDED. Chain 31, P-RING, Q-LAW, P6, and P7 are CANDIDATE or conditional; the deposit makes no claim of established physics. The deposit license field records CC BY 4.0 (the documents); the code files within are MIT licensed as stated in the repository LICENSE file."
+}
